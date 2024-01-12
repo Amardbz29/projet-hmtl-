@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="shortcut icon" href="monkey computer.jpg">
+    <link rel="stylesheet"href="style.css" />
+</head>
+<body>
+    
+</body>
+<section>
+    <form action="action.php" method="post">
+        <label for="name">Nom</label><br>
+        <input for="name" type="text" placeholder="saisir votre nom"required="required"><br>
+        <label for="name">Prénom</label><br>
+        <input for="name" type="text" placeholder="saisir votre Prénom"required="required"><br>
+        <label for="Email">Email</label><br>
+        <input for="Email" type="Email" placeholder="saisir votre Email" required="required"><br>
+        <div>
+            <label for="name">Sexe</label>
+            <input type="radio" name="sexe" checked="" id="Gender" required="required">
+            <labelfor="Gender">Masculin</label>
+            <input type="radio" name="sexe"  id="Gender">
+            <label for="Gender">Féminin</label>
+        </div>
+        <div>
+            <br><label>Photo</label><br>
+            <input type="file" accept="image/jpg/png"><br>
+            <br><img src="monkey sun.jpg"
+            height="300px"
+            alt="Monkey sun">
+        </div>
+        <div><br>
+            <label for="name">Pays</label>
+            <select id="country">
+                <option value="France">France</option>
+                <option value="Algerie">Algerie</option>
+            </select><br>
+        </div><br>
+        
+        <div>
+            <label>Les languages préferés</label>
+            <select name="languages" id="lang" multiple>
+                <option value="java">Java></option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="PHP">PHP</option>
+                <option value="Phyton">Phyton</option>
+            </select>
+        </div><br>
+        <div>
+            <label>Domaines d'activités</label>
+            <input type="checkbox" name="computer science">
+            <label>Informatique</label>
+            <input type="checkbox" name="management">
+            <label>Gestion></label>
+            <input type="checkbox" name="pedagogic">
+            <label>pédagogique</label>
+        </div><br>
+        <div>
+            <input type="submit" value="Valider">
+            <input type="submit"  value="annuler">
+        </div>
+        
+      </form>
+      </section>
+</html>
